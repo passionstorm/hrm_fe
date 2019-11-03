@@ -2,7 +2,7 @@
 <header class="main-header">
     <a href="#" class="logo">
         <span class="logo-mini">HRM</span>
-        <span class="logo-lg"><b>COMPANY</b>name</span>
+        <span class="logo-lg">#company_name</span>
     </a>
     <nav class="navbar navbar-static-top">
         <a href="#" class="sidebar-toggle" data-toggle="push-menu" role="button">

@@ -9,7 +9,7 @@
                     <img src="images/admin-avatar-512-512.png" class="img-circle">
                 </div>
                 <div class="pull-left info">
-                    <p>###username</p>
+                    <p>#username</p>
                     <a href="#"><i class="fa fa-circle text-success"></i> Online</a>
                 </div>
             </div>
