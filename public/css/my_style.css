@@ -1,0 +1,48 @@
+*{
+    box-sizing: border-box;
+}
+
+
+.w-200{
+    width: 200px !important;
+}
+
+
+.text-bold{
+    font-weight: bold;
+}
+
+
+.p-lr-10{
+    padding-left: 10px !important;
+    padding-right: 10px !important;
+}
+.p-t-0{
+    padding-top: 0px !important;
+}
+.pd-t-10{
+    padding-top: 10px !important;
+}
+
+
+.m-t-0{
+    margin-top: 0 !important;
+}
+.m-t-20{
+    margin-top: 50px !important;
+}
+
+
+.scroll-y{
+    overflow-y: auto;
+}
+
+
+.l-h-40{
+    line-height: 40px;
+}
+
+
+.f-s-18{
+    font-size: 25px;
+}

@@ -1,10 +1,14 @@
 <template>
   <div>
-    <Header></Header>
-    <Sidebar></Sidebar>
-    <Content></Content>
-    <Footer></Footer>
-    <ControlSideBar></ControlSideBar>
+    <!-- landing page -->
+    <LPLayout></LPLayout>
+    
+    <!-- layout -->
+    <Header v-if="false"></Header>
+    <Sidebar v-if="false"></Sidebar>
+    <Content v-if="false"></Content>
+    <Footer v-if="false"></Footer>
+    <ControlSideBar v-if="false"></ControlSideBar>
   </div>
 </template>
 
@@ -14,16 +18,17 @@ import Sidebar from './components/layouts/Sidebar.vue';
 import Content from './components/layouts/Content.vue';
 import Footer from './components/layouts/Footer.vue';
 import ControlSideBar from './components/layouts/ControlSideBar.vue';
-
+import LPLayout from './components/landingpage/LPLayout.vue';
 
 export default {
   name: 'app',
   components: {
+    LPLayout,
     Header,
     Sidebar,
     Content,
     Footer,
-    ControlSideBar
+    ControlSideBar,
   }
 }
 </script>
