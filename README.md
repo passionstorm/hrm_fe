@@ -1,4 +1,4 @@
-# vue_toy
+# HRM source front end
 
 ## Project setup
 ```
