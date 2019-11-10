@@ -3,10 +3,10 @@
     <a id="logo" href="/">HRM</a>
     <ul id="nav">
       <li>
-        <a class="toggle-nav-link">Login</a>
+        <a class="toggle-nav-link" data-toggle="modal" data-target="#loginModal">Login</a>
       </li>
       <li>
-        <a class="toggle-nav-link">Register</a>
+        <a class="toggle-nav-link" data-toggle="modal" data-target="#registerModal">Register</a>
       </li>
     </ul>
   </div>

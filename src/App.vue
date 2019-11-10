@@ -1,14 +1,14 @@
 <template>
   <div>
     <!-- landing page -->
-    <LPLayout></LPLayout>
+    <LPLayout v-if="isLandingPage"></LPLayout>
     
     <!-- layout -->
-    <Header v-if="false"></Header>
-    <Sidebar v-if="false"></Sidebar>
-    <Content v-if="false"></Content>
-    <Footer v-if="false"></Footer>
-    <ControlSideBar v-if="false"></ControlSideBar>
+    <Header v-if="!isLandingPage"></Header>
+    <Sidebar v-if="!isLandingPage"></Sidebar>
+    <Content v-if="!isLandingPage"></Content>
+    <Footer v-if="!isLandingPage"></Footer>
+    <ControlSideBar v-if="!isLandingPage"></ControlSideBar>
   </div>
 </template>
 
@@ -29,6 +29,11 @@ export default {
     Content,
     Footer,
     ControlSideBar,
+  },
+  data: function(){
+    return {
+      isLandingPage: true
+    }
   }
 }
 </script>

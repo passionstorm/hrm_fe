@@ -1,5 +1,5 @@
 <template>
-    <div class="m-t-20">
+    <div class="m-t-50">
         <h3 class="text-center">Human Resource Management Software Company Software</h3>
         <div id="why" class="container">
             <div>
