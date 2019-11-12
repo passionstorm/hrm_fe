@@ -1,7 +1,11 @@
 <template>
   <div>
     <!-- landing page -->
-    <LPLayout v-if="isLandingPage"></LPLayout>
+    <LPLayout 
+      v-if="isLandingPage"
+      :apiServer="apiServer"
+      :apiLogin="apiLogin"
+    ></LPLayout>
     
     <!-- layout -->
     <Header v-if="!isLandingPage"></Header>
@@ -32,7 +36,9 @@ export default {
   },
   data: function(){
     return {
-      isLandingPage: true
+      isLandingPage: false,
+      apiServer: 'http://localhost:8080/hrm/public/',
+      apiLogin: 'api/login',
     }
   }
 }

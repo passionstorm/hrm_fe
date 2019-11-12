@@ -7,19 +7,19 @@
           <h4 class="modal-title text-center text-bold">Login</h4>
         </div>
         <div class="modal-body p-0">
-            <form class="form-horizontal">
+            <form class="form-horizontal" :action="apiServer + apiLogin" method="post">
                 <div class="form-group has-feedback m-lr-15">
-                    <input type="text" class="form-control" placeholder="username">
+                    <input type="text" class="form-control" placeholder="username" name="username" autocomplete="off">
                     <span class="fas fa-user  form-control-feedback"></span>
                 </div>
                 <div class="form-group has-feedback m-lr-15">
-                    <input type="text" class="form-control" placeholder="password">
+                    <input type="text" class="form-control" placeholder="password" name="password" autocomplete="off">
                     <span class="fas fa-lock  form-control-feedback"></span>
                 </div>
+                <div class="modal-footer p-t-0">
+                  <button class="btn btn-primary">Login</button>
+                </div>
             </form>
-        </div>
-        <div class="modal-footer p-t-0">
-          <button type="button" class="btn btn-primary" data-dismiss="modal">Login</button>
         </div>
       </div>
     </div>
@@ -29,6 +29,7 @@
 <script>
 export default {
   name: 'LPLogin',
+  props: ['apiServer', 'apiLogin'],
 }
 </script>
 

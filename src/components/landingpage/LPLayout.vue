@@ -4,7 +4,10 @@
     <LPHero></LPHero>
     <LPWhy></LPWhy>
     <LPFooter></LPFooter>
-    <LPLogin></LPLogin>
+    <LPLogin 
+      :apiServer = "apiServer"
+      :apiLogin="apiLogin"
+    ></LPLogin>
     <LPRegister></LPRegister>
   </div>
 </template>
@@ -17,6 +20,7 @@ import LPFooter from './LPFooter.vue';
 import LPLogin from './LPLogin.vue';
 import LPRegister from './LPRegister.vue';
 export default {
+  props: ['apiServer', 'apiLogin'],
   name: 'LPLayout',
   components: {
     LPHeader,
